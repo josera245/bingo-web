@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BinGo Envios y traslado</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: url('fondo.jpeg') no-repeat center center/cover;
+}
+
+/* OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 20, 60, 0.85);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.logo-text span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-nav {
+    background: #f97316;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+}
+
+.hero-text p {
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    background: #f97316;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 400px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo3.png">
+        <div class="logo-text">
+            <h1>BinGo</h1>
+            <span>Tu pedido más cerca de ti</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Zonas</a>
+        <a href="#">Contacto</a>
+        <a href="#" class="btn-nav">Contáctanos</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>¡Delivery de confianza hasta tu puerta!</h2>
+        <p>Servicio rápido y seguro de reparto de comida a domicilio.</p>
+        <a class="btn" href="https://wa.me/5213343298245">Pedir por WhatsApp</a>
+    </div>
+
+    <img src="logo4.jpeg.png">
+</section>
+
+<div class="cards">
+    <div class="card">
+        <h3>📦 Servicios</h3>
+        <p>Entregas rápidas y seguras.</p>
+    </div>
+
+    <div class="card">
+        <h3>📍 Zonas</h3>
+        <p>Cobertura en : Tlajomulco centro,Campo sur,Vista sur,Cima del sol,San miguel cuyutlan,Lomas del sur entre otras localidades cercanas</p>
+    </div>
+
+    <div class="card">
+        <h3>💬 Horario de Atencion</h3>
+        <p>Te Brindamos Atención inmediata en nustros horarios de 8am a 22 pm</p>
+    </div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/5213343298245">💬</a>
+
+</body>
+</html>
